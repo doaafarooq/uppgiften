@@ -1,0 +1,108 @@
+<app-header></app-header><br>
+<div class="container">
+  <form [formGroup]="uppdateForm" (ngSubmit)="uppdate()">
+    <h3> Profile </h3>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" formControlName="firstname" placeholder="Skriv ditt förnamn" value="{{ user.firstname}}"
+        aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2" >edit</button>
+      </div>
+     
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" formControlName="lastname" value="{{ user.lastname}}" aria-label="Recipient's username"
+        aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2" >edit</button>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control"formControlName="birthday" value="{{ user.birthday}}" aria-label="Recipient's username"
+        aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2">edit</button>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control"formControlName="email" value="{{ user.email}}" aria-label="Recipient's username"
+        aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2">edit</button>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control"formControlName="password" value="{{ user.password}}" aria-label="Recipient's username"
+        aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2">edit</button>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control"formControlName="city" value="{{ user.city}}" aria-label="Recipient's username"
+        aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2">edit</button>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control"formControlName="zipcode" value="{{ user.zipcode}}" aria-label="Recipient's username"
+        aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2">edit</button>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" formControlName="addresslinefaktura" value="{{ user. addresslinefaktura}}"
+        aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2">edit</button>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control"formControlName="addressline" value="{{ user. addressline}}" aria-label="Recipient's username"
+        aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2">edit</button>
+      </div>
+    </div>
+    <input class="btn btn-info" type="submit" value="save">
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div>
+        <h6> {{user.firstname}}</h6>
+        <span>
+          <button (click)="uppdate()" class="text-danger">uppdate</button></span>
+
+      </div>
+
+      <h6> {{user.firstname}}</h6>
+      <h6> {{user.lastname}}</h6>
+      <button (click)="deleteUser(user._id)" class="text-danger">Delete</button>
+      -->
+
+
+</div>
